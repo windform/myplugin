@@ -1,0 +1,46 @@
+
+		.checkbox-label {
+		   display: block;
+		   width: 53px;
+		   height: 20px;
+		   position: relative;
+		   /*overflow: hidden;*/
+		   border-style: solid;
+		   border-width:2px;
+		}
+		.checkbox-label>input[type="checkbox"]{
+			position: absolute;
+			opacity: 1;
+			top: 20px;
+			/*display: none;*/
+		}
+
+		span.fx-checkbox{
+			display: block;
+			width: 110px;
+			position: absolute;
+			top:0px;
+			color: #468fcc;
+			font-size: 12px;
+			font-weight: light;
+		}
+		span.fx-checkbox span.glyphicon{
+			background-color: #468fcc;
+			color: #ffffff;
+			padding: 1px 5px;
+		}
+		span.fx-checkbox span.checkbox-font{
+			position: relative;
+			top:-1px;
+			display: inline-block;
+			width: 25px;
+			text-align: center;
+		}
+		span.fx-checkbox span:nth-child(1){
+			color: #aaaaaa;
+		}
+		span.fx-checkbox span:nth-child(2){
+			background-color: #aaaaaa;
+			margin-right: 5px;
+		}
+

@@ -1,0 +1,14 @@
+.inputclear-box {
+	position: relative;
+	overflow: hidden;
+}
+.inputclear-clear {
+	cursor: pointer;
+	display: none;
+	color: #999;
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	z-index: 3;
+	margin-top: -7px;
+}
