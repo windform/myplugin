@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>checkboxtoggle组件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/checkboxtoggle.css">
+</head>
+<body>
+ <input type="checkbox" data-label="启|禁" checked> 
+
+  <input type="checkbox" data-label="启用|禁用"> 
+
+   <input type="checkbox" data-label="启用了|禁用了" checked> 
+
+    <input type="checkbox" data-label="启用开始|禁用开始">
+
+     <input type="checkbox" data-label="启用开始了|禁用开始了">  
+
+<!--  <label class="checkbox-label">
+ 	<input type="checkbox" data-label="禁用" checked="">
+ 	<span class="fx-checkbox">
+	 	<span class="checkbox-font">天财</span>
+	 	<span class="glyphicon glyphicon-remove"></span>
+	 	<span class="glyphicon glyphicon-ok"></span>
+	 	<span class="checkbox-font">风行科技风行科技</span>
+ 	</span>
+
+ </label> -->
+ 
+
+ <script src="js/jquery.min.js"></script>
+ <script src="js/checkboxtoggle.js"></script>		
+
+
+ <script>
+ 	$(function(){
+ 		 $('input[type="checkbox"]').checkboxtoggle();
+
+ 		// var arr=[];
+ 		// var arr1=[];
+ 		// var span=$("span.fx-checkbox").find("span");
+ 		// for(var i=0; i<span.size();i++){
+ 		// 	arr.push(span.eq(i).width());
+ 		// }
+ 		// for(var i=0; i<span.size();i++){
+ 		// 	arr1.push(span.eq(i).height());
+ 		// }
+ 		// var maxW=Math.max.apply(null, arr);
+ 		// var maxH=Math.max.apply(null, arr1);
+ 		// //alert(maxW+','+maxH);
+ 		// $("span.fx-checkbox").find("span").css({
+ 		//  	width:maxW+3,
+ 		//  	height:maxH,
+
+ 		//  });
+ 		
+ 		//  $('span.fx-checkbox').css({
+ 		//  	width:2*maxW+12,
+ 		//  	height:maxH+4
+ 		//  });
+ 	})
+ </script>
+</body>
+</html>
