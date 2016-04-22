@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+
+</head>
+<body>
+
+<div id="div1">
+init
+</div>
+<div id="div2">
+ace
+</div>
+<div id="div3">
+flop
+</div>
+<div id="div4">
+fly
+</div>
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/plugin_demo.js"></script>
+<script>
+$(function(){
+	$('#div1').tooltip('flip',{
+		border:'solid 10px #e02222',
+		backgroundColor:'#0088cc'
+	});
+	$('#div2').ace({
+		width:'200px',
+		height:'200px',
+		borderRadius:'10px',
+		border:'solid 5px #000',
+
+	});
+	$('#div3').tooltip('flip',{
+		width:'150px',
+		height:'150px',
+		borderRadius:'50%',
+		border:'solid 3px maroon',
+		backgroundColor:'purple'
+	});
+	$('#div4').tooltip();
+
+
+})
+</script>
+</body>
+</html>

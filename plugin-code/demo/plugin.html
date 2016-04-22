@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#special{
+			height: 300px;
+		}
+	</style>
+	
+</head>
+<body>
+
+
+<div id="special">
+
+<div id="first">ghjhgjhgj</div>
+<div id="second">ghadfjhgadsjk</div>
+<div id="third"></div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/plugin.js"></script>
+<script>
+$(function(){
+	//$.fn.canvasizr.options.fillStyle = "#fe57a1";
+	$( "#special" ).canvasizr({
+	  font : "30px Consolas,'Lucida Console',monospace"
+	}); 
+	$( "#first, #second, #third" ).canvasizr({
+	  textColor : "#ffffff",
+	  fillStyle:  "#ff0000",
+	  font : "40px sans-serif",
+	  border:true
+	}); 
+
+})
+</script>
+</body>
+</html>

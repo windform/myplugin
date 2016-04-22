@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>多重条件筛选功能</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/filter.css">
+	 <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> 
+	<script src="js/jquery.fxfilter.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<ul>插件使用方式：
+			<li>data-role配置的是筛选插件的名称“filter”</li>
+			<li>data-file配置的是插件远程加载的json数据路径</li>
+			<li>data-targe配置的是插件加载放置的容器名称，与id相同，注意要加#号</li>
+		</ul>
+		<hr>
+		<h3>插件DEMO</h3>
+		<hr>
+	</div>
+</div>
+<br>
+<div class="form-search" data-role="filter" data-file="data/filter.json" data-target=".form-search">
+</div>
+
+<div class="form-search" data-role="filter" data-file="data/filter.json" data-target=".form-search">
+</div>
+
+<div class="form-search" data-role="filter" data-file="data/filter.json" data-target=".form-search">
+</div>
+
+
+<script>
+	$(function(){
+		$('.form-search').fxfilter();
+	})
+</script>
+
+</body>
+</html>

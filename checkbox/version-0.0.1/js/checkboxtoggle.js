@@ -60,6 +60,7 @@
  		})
 
  		};
+ 		
  		Plugin = function(option) {
 			var args = Array.prototype.splice.call(arguments, 1);
 			return this.each(function() {

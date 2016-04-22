@@ -5,8 +5,6 @@
  * Licensed under the MIT license
  */
 
-// 函数自调用之前加入分号
-// 引入依赖的网络脚本或插件
 ;(function ( $, window, document, undefined ) {
 
     // 创建默认的配置
@@ -22,6 +20,7 @@
         this.options = $.extend( {}, defaults, options) ;
 
         this._defaults = defaults;
+        
         this._name = pluginName;
 
         this.init();

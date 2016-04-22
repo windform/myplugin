@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>checkboxtoggle组件</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/checkboxtoggle.css">
+</head>
+<body>
+ <input type="checkbox" data-label="启|禁" checked> 
+
+  <input id="demo2" type="checkbox" data-label="启用|禁用"> 
+
+   <input id="demo1" type="checkbox" data-label="启用了|禁用了" checked> 
+
+    <input type="checkbox" data-label="启用开始|禁用开始">
+
+     <input type="checkbox" data-label="启用开始了|禁用开始了">  
+
+<!--  <label class="checkbox-label">
+ 	<input type="checkbox" data-label="禁用" checked="">
+ 	<span class="fx-checkbox">
+	 	<span class="checkbox-font">天财</span>
+	 	<span class="glyphicon glyphicon-remove"></span>
+	 	<span class="glyphicon glyphicon-ok"></span>
+	 	<span class="checkbox-font">风行科技风行科技</span>
+ 	</span>
+
+ </label> -->
+
+ <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.js"></script>
+ <script src="js/checkboxtoggle.js"></script>
+
+
+
+
+
+ <script>
+ 	$(function(){
+ 		 $('input[type="checkbox"]').checkboxtoggle('show',{
+ 		 	speed:500，
+ 		 	checked：true|false
+ 		 });
+
+ 		
+ 		$('#demo1').click(function() {
+ 			$('#demo2').checkboxtoggle('checked', false);
+ 		});
+
+ 	})
+
+
+ </script>
+</body>
+</html>
